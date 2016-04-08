@@ -1,21 +1,32 @@
+/**
+ *  Welcome to the Mr. Frontend gulpfile!
+ *  The gulp tasks are splitted in several files in the gulp directory
+ *  because putting all here was really too long :)
+ */
+
+'use strict';
+
 var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
+var fs = require('fs-extra');
 
-gulp.task('sass', function() {
-    gulp.src('src/sass/style.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(gulp.dest('dist/resoure/css'))
-        .pipe(browserSync.stream());
+
+
+/**
+ *  This will load all js or coffee files in the gulp directory
+ *  in order to load all gulp tasks
+ */
+var gulpFiles = fs.readdirSync('./gulp').filter(function(file) {
+  return (/\.(js|coffee)$/i).test(file);
 });
 
-gulp.task('serve', function() {
-    browserSync.init({
-        server: "./"
-    });
+gulpFiles.forEach(function (gulpFile) {
+    require('./gulp/' + gulpFile);
 });
 
-gulp.task('default', ['serve', 'sass'], function () {
-    gulp.watch('src/sass/*.scss', ['sass']);
-    gulp.watch('./index.html').on('change', browserSync.reload);
+/**
+ *  Default task clean temporaries directories and launch the
+ *  main optimization build task
+ */
+gulp.task('default', ['clean'], function () {
+  gulp.start('build');
 });

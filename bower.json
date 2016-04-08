@@ -1,0 +1,15 @@
+{
+  "name": "mrfrontend-website-2016",
+  "description": "Mr Frontend Website",
+  "version": "1.0.0",
+  "authors": [
+    "Raymon Schouwenaar",
+    "Floris Smitskamp"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.mrfrontend.org",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "font-awesome": "^4.5.0"
+  }
+}
