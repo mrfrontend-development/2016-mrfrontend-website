@@ -27,6 +27,7 @@ This is the repo for creating the new website of the Mr Frontend Community
 
 *Development*
 All the development files can be found in the /src folder.
+Base files are imported in style.scss. Page specific styles can be added in the sass/pages folder. These sass files get injected automatically by Gulp commands. 
 
 *Gulp commands*
 - gulp - Make production build in /dist folder
