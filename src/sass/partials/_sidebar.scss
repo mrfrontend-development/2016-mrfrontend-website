@@ -5,7 +5,7 @@
   bottom: 0;
   left: 0;
   color: $white;
-  background-color: $red;
+  background-color: $pink;
   @include transition(ease-in-out width, .5s);
   .mobile_collapse {
     width: 50px; height: 50px;
@@ -20,7 +20,7 @@
         height: 50px;
         line-height: 50px;
         display: block;
-        color: $red;
+        color: $pink;
         font-size: 1.8rem;
         text-align: center;
       }

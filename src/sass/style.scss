@@ -24,10 +24,20 @@
 @import 'partials/_footer.scss';
 @import 'partials/_content.scss';
 
-// Pages
-@import 'pages/_homepage.scss';
-@import 'pages/_contactpage.scss';
-@import 'pages/_aboutpage.scss';
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
 
 
 
