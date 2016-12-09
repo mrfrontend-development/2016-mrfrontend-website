@@ -10,7 +10,8 @@
     }
   ],
   "scripts": {
-    "start": "gulp & node server.js"
+    "start": "node server.js",
+    "prestart" : "node node_modules/gulp/bin/gulp"
   },
   "devDependencies": {
     "browser-sync": "^2.9.12",
