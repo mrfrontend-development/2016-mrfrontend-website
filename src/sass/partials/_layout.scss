@@ -1,4 +1,28 @@
+.site-container {
+	padding-top: 0px;
+}
 .container {
-  width: 100%;
-  height: auto;
+  width: 940px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+	.container {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.site-pusher,
+	.site-container {
+		height: 100%;
+	}
+	.site-container {
+		overflow: hidden;
+	}
+	.site_pusher {
+		 -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+	}
 }

@@ -1,3 +1,157 @@
 .content {
-  padding: 2rem;
+	padding: 2rem;
+}
+
+.intro {
+	position: relative;
+	min-height: 800px;
+	background: url("../images/bg-intro-mrfrontend.png")50%/cover no-repeat;
+	text-align: center;
+	padding-top: 275px;
+	padding-bottom: 200px;
+	color: $white;
+	h1 {}
+	p {
+		line-height: 30pt;
+		font-size: 18px;
+	}
+	a {
+		top: 100px;
+	}
+	button.button--pink {
+		text-decoration: none;
+		background: none;
+		color: $white;
+		border-radius: 28px;
+		border: solid 2px $pink;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 20px;
+		&:hover {
+			background: $pink;
+		}
+	}
+}
+
+.technologies {
+	padding-top: 100px;
+	padding-bottom: 150px;
+	text-align: center;
+	position: relative;
+	h2 {
+		color: $darkblue;
+		font-size: 32px;
+	}
+	#slider {
+		list-style: none;
+		padding-top: 95px;
+		li {
+			width: 240px;
+			margin: 0 auto;
+			a {
+				img {
+					margin: 0px;
+					display: inline-block
+				}
+			}
+		}
+	}
+}
+
+.benefits {
+	background: $nightblue;
+	text-align: center;
+	clear: both;
+	height: auto;
+	h2 {
+		color: $white;
+		padding-top: 100px;
+		padding-bottom: 80px;
+	}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 55px;
+	}
+	h3 {
+		color: $white;
+		text-align: center;
+		color: $pink;
+		font-size: 18px;
+	}
+	p {
+		color: $white;
+		text-align: center;
+		font-size: 14px;
+		padding-bottom: 115px;
+	}
+}
+
+.about {
+	padding-top: 115px;
+	padding-bottom: 100px;
+	background: $lightgrey;
+	h2 {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		text-align: center;
+		font-size: 32px;
+	}
+	p {
+		font-size: 18px;
+		a {
+			text-decoration: none;
+			color: $pink;
+			font-weight: bold;
+		}
+	}
+}
+
+.recent-posts {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	h2 {
+		text-align: center;
+		padding-bottom: 80px;
+	}
+	article {
+		
+	}
+	h3 {
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: $pink;
+		}
+	}
+}
+
+.join {
+	background: $pink;
+	padding-top: 60px;
+	padding-bottom: 55px;
+	text-align: center;
+	h2 {
+		color: $white;
+		padding-bottom: 35px;
+	}
+	.button-outlined--white {
+		text-decoration: none;
+		background: none;
+		color: $white;
+		border-radius: 28px;
+		border: solid 2px $white;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 20px;
+		&:hover {
+			background: $lightgrey;
+			color: $pink;
+		}
+	}
 }

@@ -1,3 +1,23 @@
 .footer {
-
+	background: $nightblue;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	.author {
+		float: left;
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+	.social {
+		float: right;
+		list-style: none;
+		li {
+			display: inline-block;
+		}
+	}
 }

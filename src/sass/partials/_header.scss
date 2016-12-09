@@ -1,2 +1,13 @@
 .header {
+	
+  left: 0;
+  right: 0;
+  height: 77px;
+  line-height: 77px;
+  color: $white;
+  background-color: $nightblue;
+	&__logo {
+		
+    float: left
+	}
 }
