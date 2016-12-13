@@ -1,1 +1,25 @@
-.homepage { color: green; }
+//.homepage { color: green; }
+
+.technologies-inner-container {
+  .slick-prev:before {
+    content: "\f104";
+    font-family: FontAwesome;
+    padding: 0 10px;
+    color: #000;
+    position: absolute;
+    font-size: 50px;
+    top: -50%;
+    left: 20%;
+  }
+
+  .slick-next:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    padding: 0 10px;
+    color: #000;
+    position: absolute;
+    font-size: 50px;
+    top: -50%;
+    right: 20%;
+  }
+}
