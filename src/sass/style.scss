@@ -1,5 +1,7 @@
 // Vendor
 @import 'vendor/_normalize.scss';
+@import 'vendor/_slick.scss';
+@import 'vendor/_slick-theme.scss';
 
 // Mixins
 @import 'mixins/_position.scss';
@@ -15,6 +17,7 @@
 @import 'modules/_typo.scss';
 @import 'modules/_print.scss';
 @import 'modules/_clearfix.scss';
+
 
 // Partials
 @import 'partials/_layout.scss';

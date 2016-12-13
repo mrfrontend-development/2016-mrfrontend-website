@@ -23,15 +23,37 @@ $(document).ready(function(){
 
 	})(jQuery);
 
+	(function($) {
+		$('.technologies-inner-container').slick({
+			infinite: true,
+			slidesToShow: 6,
+			slidesToScroll: 4,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
+		});
+	})(jQuery);
 });
 
-$(document).ready(function(){
-     		$('#slider').bxSlider({
-    		ticker: true,
-    		tickerSpeed: 5000,
-			tickerHover: true
-  		});
-  		});
 
 //TIMELINE GUILINE
 jQuery(document).ready(function($){
